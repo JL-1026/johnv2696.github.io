@@ -17,7 +17,7 @@
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
   <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
 
@@ -25,6 +25,7 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 </head>
 
@@ -50,8 +51,8 @@
               <li class="nav-item ">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="about.html"> About</a>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Courses.html">Course</a>
@@ -60,51 +61,103 @@
                 <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
-            <div class="quote_btn-container">
-              <a href="" class="quote_btn">
-                Get A Quote
-              </a>
-            </div>
           </div>
         </nav>
       </div>
     </header>
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                Basic CSS
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item">
+                  <a class="nav-link" href="Intro.html">Introduction<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="Comments.html">Comments</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="colors.html">Colors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Background.html">Backgrounds</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="border ">Border</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Margin.html">Margin</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
     <!-- end header section -->
   </div>
+  <div class="container ">
+      <div class="row ">
+      <div class="col ">
 
-  <!-- about section -->
-
-  <section class="about_section layout_padding layout_margin">
-    <div class="container  ">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                About Us
-              </h2>
+        <div class="accordion accordion-flush " id="AccordionSample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#Collapse1" aria-expanded="true" aria-controls="Collapse1"><b>CSS Comments</b></button>
+            </h2>
+              <div id="Collapse1" class="accordion-collapse collapse show" data-bs-parent="AccordionSample" aria-labelledby="heading1">
+                <div class="accordion-body">
+                  <p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p>
+                  <p>Comments are ignored by browsers.</p>
+                  <p>A CSS comment is placed inside the style> element, and starts with "/* and ends with */"</p>
             </div>
-            <p>
-              We create simplified and interactive learning experiences. Learning web development should be easy to understand and available for everyone, everywhere IT Geeks is a school for web developers, covering all the aspects of web development.
-              A web development expert is what one would call an architect of the web. Web developers built the foundations of websites, blogs and other platforms hosting the information and contents users are searching for. Not only are they meticulous and creative, but they are also multilingual experts, able to understand and speak several programming languages, the most common ones being HTML, CSS, JavaScript, PHP, Python, and many more. Unlike what most people think, web development is a technical but also social field. 
-              Web development experts are often working in teams with designers, marketers, project managers and clients to develop the best possible products. 
-            </p>
-            <a href="">
-              Read More
-            </a>
-          </div>
         </div>
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/about-img.png" alt="">
-          </div>
+        <h2 class="accordion-header" id="heading2">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#Collapse2" aria-expanded="false" aria-controls="Collapse2"><b>Example</b></button>
+        </h2>
+        <div id="Collapse2" class="accordion-collapse collapse" data-bs-parent="AccordionSample" aria-labelledby="heading2">
+        <div class="accordion-body">
+            <p style="color: green;">/* This is a single-line comment */</p>
+            <p>p {</p>
+            <p>  color: red;</p>
+            <p>}</p>
+            
+            <p>Even in the middle of a code line:</p>
+            <p>p {
+              color: /*red*/blue; 
+            } </p>
+           <p>Comments can also span multiple lines:</p>
+           <p style="color: green;">/* This is </p>
+            <p style="color: green;">a multi-line</p>
+            <p style="color: green;">comment */</p>
         </div>
-
-      </div>
     </div>
-  </section>
-
-  <!-- end about section -->
+          <h2 class="accordion-header" id="heading3">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#Collapse3" aria-expanded="false" aria-controls="Collapse3"><b>HTML and CSS Comments</b></button>
+       </h2>
+            <div id="Collapse3" class="accordion-collapse collapse" data-bs-parent="AccordionSample" aria-labelledby="heading3">
+             <div class="accordion-body">
+              <p>From the HTML tutorial, you learned that you can add comments to your HTML source by using the <!--...--> syntax.</p>
+              <p>In the following example, we use a combination of HTML and CSS comments:</p>
+              <p><b>Example</b></p>
+              <img class="img-fluid img2" src="images/Example1.PNG" alt="#">
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
 
   <div class="footer_container">
     <!-- info section -->
@@ -219,6 +272,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
   <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
 
