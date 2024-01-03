@@ -70,7 +70,7 @@
           <nav class="navbar navbar-expand-lg custom_nav-container ">
             <a class="navbar-brand" href="index.html">
               <span>
-                Advance CSS
+                Responsive CSS
               </span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,23 +79,23 @@
   
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
-                <li class="nav-item">
-                  <a class="nav-link" href="CSS Advance.html">CSS Multiple Backgrounds<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active ">
-                  <a class="nav-link" href="CSSA Transitions.html">Transition</a>
+                <li class="nav-item active">
+                  <a class="nav-link" href="CSS Responsive.html">Responsive Web Design<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="CSSAanimation.html">Animation</a>
+                  <a class="nav-link" href="CSS Responsive 2.html">RWD Grid View</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="CSSAImage .html">Border Image</a>
+                  <a class="nav-link" href="CSS Responsive 3.html">RWD Media Queries</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Border.html">2D Transform</a>
+                  <a class="nav-link" href="#">RWD Videos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Margin.html">3D Transform</a>
+                  <a class="nav-link" href="#">RWD Frameworks</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">RWD Templates</a>
                 </li>
               </ul>
             </div>
@@ -112,74 +112,115 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading1">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" 
-              data-bs-target="#Collapse1" aria-expanded="true" aria-controls="Collapse1"><b>CSS Transitions</b></button>
+              data-bs-target="#Collapse1" aria-expanded="true" aria-controls="Collapse1"><b>Responsive Web Design - Grid-View</b></button>
             </h2>
               <div id="Collapse1" class="accordion-collapse collapse show" data-bs-parent="AccordionSample" aria-labelledby="heading1">
                 <div class="accordion-body">
-                  <p>CSS transitions allows you to change property values smoothly, over a given duration.</p>
-                  <p>Mouse over the element below to see a CSS transition effect:</p>
-                  <p>In this chapter you will learn about the following properties:</p>
-                  <ul>
-                    <li>transition</li>
-                    <li>transition-delay</li>
-                    <li>transition-duration</li>
-                    <li>transition-property</li>
-                    <li>transition-timing-function</li>
-                  </ul>
+                  <h3>What is a Grid-View?</h3>
+                  <p>Many web pages are based on a grid-view, which means that the page is divided into columns:/p>
+                  <p>Using a grid-view is very helpful when designing web pages. It makes it easier to place elements on the page.</p>
+                  <p>A responsive grid-view often has 12 columns, and has a total width of 100%, and will shrink and expand as you resize the browser window.</p>
+                  <img class="img-fluid img2" src="images/gridview.avif" alt="#">
+
             </div>
         </div>
         <h2 class="accordion-header" id="heading2">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#Collapse2" aria-expanded="false" aria-controls="Collapse2"><b>Browser Support for Transitions</b></button>
+            data-bs-target="#Collapse2" aria-expanded="false" aria-controls="Collapse2"><b>Building a Responsive Grid-View</b></button>
         </h2>
         <div id="Collapse2" class="accordion-collapse collapse show" data-bs-parent="AccordionSample" aria-labelledby="heading2">
         <div class="accordion-body">
-            <P>The numbers in the table specify the first browser version that fully supports the property.</P>
-            <img class="img-fluid img2" src="images/example21.PNG" alt="#">
-            <p>How to Use CSS Transitions?</p>
-            <p>To create a transition effect, you must specify two things:</p>
-              <ul>
-                <li>the CSS property you want to add an effect to</li>
-                <li>the duration of the effect</li>
-              </ul>
-            <p>Note: If the duration part is not specified, the transition will have no effect, because the default value is 0.</p>
-           <p>The following example shows a 100px * 100px red <div element. The div> element has also specified a transition effect for the width property, with a duration of 2 seconds:</p>
-            <p>Example</p>
-            <img class="img-fluid img2" src="images/example22.PNG" alt="#">
-        
-          </div>
+            <P>Lets start building a responsive grid-view.</P>
+            <p>First ensure that all HTML elements have the box-sizing property set to border-box. This makes sure that the padding and border are included in the total width and height of the elements.</p>
+            <p>Add the following code in your CSS:</p>
+            <p> * {
+              box-sizing: border-box;
+            }</p>
+            <p>Read more about the box-sizing property in our CSS Box Sizing chapter.</p>
+            <p>The following example shows a simple responsive web page, with two columns:</p>
+        </div>
     </div>
           <h2 class="accordion-header" id="heading3">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" 
-        data-bs-target="#Collapse3" aria-expanded="false" aria-controls="Collapse3"><b>Change Several Property Values</b></button>
+        data-bs-target="#Collapse3" aria-expanded="false" aria-controls="Collapse3"><b>Examples</b></button>
        </h2>
             <div id="Collapse3" class="accordion-collapse collapse show" data-bs-parent="AccordionSample" aria-labelledby="heading3">
              <div class="accordion-body">
-              <p>The following example adds a transition effect for both the width and height property, with a duration of 2 seconds for the width and 4 seconds for the height:</p>
-              <p>Example</p>
-              <p>div {
-                transition: width 2s, height 4s;
+              <p>.menu {
+                width: 25%;
+                float: left;
+              }
+              .main {
+                width: 75%;
+                float: left;
               }</p>
+              <p>TThe example above is fine if the web page only contains two columns.</p>
+              <p>However, we want to use a responsive grid-view with 12 columns, to have more control over the web page.</p>
+              <p>First we must calculate the percentage for one column: 100% / 12 columns = 8.33%.</p>
+              <p>Then we make one class for each of the 12 columns, class="col-" and a number defining how many columns the section should span:</p>
+              <h3>CSS</h3>
+              <P>.col-1 {width: 8.33%;}</P>
+              <P>.col-2 {width: 16.66%;}</P>
+              <P>.col-3 {width: 25%;}</P>
+              <P>.col-4 {width: 33.33%;}</P>
+              <P>.col-5 {width: 41.66%;}</P>
+              <P>.col-6 {width: 50%;}</P>
+              <P>.col-7 {width: 58.33%;}</P>
+              <P>.col-8 {width: 66.66%;}</P>
+              <P>.col-9 {width: 75%;}</P>
+              <P>.col-10 {width: 83.33%;}</P>
+              <p>.col-11 {width: 91.66%;}</p>
+              <p>.col-12 {width: 100%;}</p>
+
+              <p> All these columns should be floating to the left, and have a padding of 15px:</p>
+              <P>CSS</P>
+              <p>[class*="col-"] {
+                float: left;
+                padding: 15px;
+                border: 1px solid red;
+              }</p>
+              
             </div>
         </div>
         <h2 class="accordion-header" id="heading4">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" 
-          data-bs-target="#Collapse4" aria-expanded="false" aria-controls="Collapse4"><b>Specify the Speed Curve of the Transition</b></button>
+          data-bs-target="#Collapse4" aria-expanded="false" aria-controls="Collapse4"><b>What is a Media Query?</b></button>
       </h2>
       <div id="Collapse4" class="accordion-collapse collapse show" data-bs-parent="AccordionSample" aria-labelledby="heading4">
       <div class="accordion-body">
-          <P>The transition-timing-function property specifies the speed curve of the transition effect.</P>
-          <p>The transition-timing-function property can have the following values:</p>
-          <ul>
-            <li>ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)</li>
-            <li>linear - specifies a transition effect with the same speed from start to en</li>
-            <li>ease-in - specifies a transition effect with a slow start</li>
-            <li>ease-out - specifies a transition effect with a slow end</li>
-            <li>ease-in-out - specifies a transition effect with a slow start and end</li>
-            <li>cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function</li>
-          </ul>
-          <p><b>Example:</b></p>
-          <img class="img-fluid img2" src="images/example23.PNG" alt="#">
+          <P>Media query is a CSS technique introduced in CSS3.</P>
+          <p>It uses the @media rule to include a block of CSS properties only if a certain condition is true.</p>
+          <p>If the browser window is 600px or smaller, the background color will be lightblue:</p>
+          <p>@media only screen and (max-width: 600px) {
+            body {
+              background-color: lightblue;
+            }
+          }</p>
+          <p><b>Add a Breakpoint</b></p>
+          <p>Media queries can help with that. We can add a breakpoint where certain parts of the design will behave differently on each side of the breakpoint.</p>
+          <img class="img-fluid img2" src="images/example33.PNG" alt="#">
+          <p>Example</p>
+          <p>When the screen (browser window) gets smaller than 768px, each column should have a width of 100%:</p>
+          <p><b>/* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            
+            @media only screen and (max-width: 768px) {
+              /* For mobile phones: */
+              [class*="col-"] {
+                width: 100%;
+              }
+            }</b></p>
 
       </div>
   </div>

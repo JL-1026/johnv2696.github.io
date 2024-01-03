@@ -80,22 +80,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
                 <li class="nav-item">
-                  <a class="nav-link" href="CSS Advance.html">CSS Multiple Backgrounds<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="CSS Responsive.html">Responsive Web Design<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active ">
-                  <a class="nav-link" href="CSSA Transitions.html">Transition</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="CSSAanimation.html">Animation</a>
+                <li class="nav-item active">
+                  <a class="nav-link" href="CSS Responsive 2.html">RWD Grid View</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="CSSAImage .html">Border Image</a>
+                  <a class="nav-link" href="CSS Responsive 3.html">RWD Media Queries</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Border.html">2D Transform</a>
+                  <a class="nav-link" href="CSS Responsive 4.html">RWD Videos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Margin.html">3D Transform</a>
+                  <a class="nav-link" href="CSS Responsive 5.html">RWD Frameworks</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="CSS Responsive 5.html">RWD Templates</a>
                 </li>
               </ul>
             </div>
@@ -112,74 +112,77 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading1">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" 
-              data-bs-target="#Collapse1" aria-expanded="true" aria-controls="Collapse1"><b>CSS Transitions</b></button>
+              data-bs-target="#Collapse1" aria-expanded="true" aria-controls="Collapse1"><b>Multiple Backgrounds</b></button>
             </h2>
               <div id="Collapse1" class="accordion-collapse collapse show" data-bs-parent="AccordionSample" aria-labelledby="heading1">
                 <div class="accordion-body">
-                  <p>CSS transitions allows you to change property values smoothly, over a given duration.</p>
-                  <p>Mouse over the element below to see a CSS transition effect:</p>
-                  <p>In this chapter you will learn about the following properties:</p>
+                  <p>In this chapter you will learn how to add multiple background images to one element.</p>
+                  <p>You will also learn about the following properties:</p>
                   <ul>
-                    <li>transition</li>
-                    <li>transition-delay</li>
-                    <li>transition-duration</li>
-                    <li>transition-property</li>
-                    <li>transition-timing-function</li>
+                    <li>background-size</li>
+                    <li>background-origin</li>
+                    <li>background-clip</li>
                   </ul>
             </div>
         </div>
         <h2 class="accordion-header" id="heading2">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#Collapse2" aria-expanded="false" aria-controls="Collapse2"><b>Browser Support for Transitions</b></button>
+            data-bs-target="#Collapse2" aria-expanded="false" aria-controls="Collapse2"><b>CSS Multiple Backgrounds</b></button>
         </h2>
         <div id="Collapse2" class="accordion-collapse collapse show" data-bs-parent="AccordionSample" aria-labelledby="heading2">
         <div class="accordion-body">
-            <P>The numbers in the table specify the first browser version that fully supports the property.</P>
-            <img class="img-fluid img2" src="images/example21.PNG" alt="#">
-            <p>How to Use CSS Transitions?</p>
-            <p>To create a transition effect, you must specify two things:</p>
-              <ul>
-                <li>the CSS property you want to add an effect to</li>
-                <li>the duration of the effect</li>
-              </ul>
-            <p>Note: If the duration part is not specified, the transition will have no effect, because the default value is 0.</p>
-           <p>The following example shows a 100px * 100px red <div element. The div> element has also specified a transition effect for the width property, with a duration of 2 seconds:</p>
-            <p>Example</p>
-            <img class="img-fluid img2" src="images/example22.PNG" alt="#">
-        
-          </div>
+            <P>CSS allows you to add multiple background images for an element, through the background-image property.</P>
+            <p>The different background images are separated by commas, and the images are stacked on top of each other, where the first image is closest to the viewer.</p>
+            <p>The following example has two background images, the first image is a flower (aligned to the bottom and right) and the second image is a paper background (aligned to the top-left corner):</p>
+            <p> Example</p>
+            <img class="img-fluid img2" src="images/Example17.PNG" alt="#">
+            <p>Multiple background images can be specified using either the individual background properties (as above) or the background shorthand property.</p>
+        </div>
     </div>
           <h2 class="accordion-header" id="heading3">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" 
-        data-bs-target="#Collapse3" aria-expanded="false" aria-controls="Collapse3"><b>Change Several Property Values</b></button>
+        data-bs-target="#Collapse3" aria-expanded="false" aria-controls="Collapse3"><b>CSS Background Size</b></button>
        </h2>
             <div id="Collapse3" class="accordion-collapse collapse show" data-bs-parent="AccordionSample" aria-labelledby="heading3">
              <div class="accordion-body">
-              <p>The following example adds a transition effect for both the width and height property, with a duration of 2 seconds for the width and 4 seconds for the height:</p>
-              <p>Example</p>
-              <p>div {
-                transition: width 2s, height 4s;
-              }</p>
+              <p>The CSS background-size property allows you to specify the size of background images.</p>
+              <p>The size can be specified in lengths, percentages, or by using one of the two keywords: contain or cover.</p>
+              <p>The following example resizes a background image to much smaller than the original image (using pixels):</p>
+              <p>The contain keyword scales the background image to be as large as possible (but both its width and its height must fit inside the content area). As such, depending on the proportions of the background image and the background positioning area, there may be some areas of the background which are not covered by the background image.</p>
+              <p>The cover keyword scales the background image so that the content area is completely covered by the background image (both its width and height are equal to or exceed the content area). As such, some parts of the background image may not be visible in the background positioning area.</p>
+              <img class="img-fluid img2" src="images/example18.PNG" alt="#">
+              <p>Example:</p>
+              <img class="img-fluid img2" src="images/example20.PNG" alt="#">
+            
             </div>
         </div>
         <h2 class="accordion-header" id="heading4">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" 
-          data-bs-target="#Collapse4" aria-expanded="false" aria-controls="Collapse4"><b>Specify the Speed Curve of the Transition</b></button>
+          data-bs-target="#Collapse4" aria-expanded="false" aria-controls="Collapse4"><b>Full Size Background Image</b></button>
       </h2>
       <div id="Collapse4" class="accordion-collapse collapse show" data-bs-parent="AccordionSample" aria-labelledby="heading4">
       <div class="accordion-body">
-          <P>The transition-timing-function property specifies the speed curve of the transition effect.</P>
-          <p>The transition-timing-function property can have the following values:</p>
+          <P>Now we want to have a background image on a website that covers the entire browser window at all times.</P>
+          <p>The requirements are as follows:</p>
           <ul>
-            <li>ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)</li>
-            <li>linear - specifies a transition effect with the same speed from start to en</li>
-            <li>ease-in - specifies a transition effect with a slow start</li>
-            <li>ease-out - specifies a transition effect with a slow end</li>
-            <li>ease-in-out - specifies a transition effect with a slow start and end</li>
-            <li>cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function</li>
+            <li>Fill the entire page with the image (no white space)</li>
+            <li>Scale image as needed</li>
+            <li>Center image on page</li>
+            <li>Do not cause scrollbars</li>
           </ul>
+          <p>The following example shows how to do it; Use the <html> element (the <html> element is always at least the height of the browser window). Then set a fixed and centered background on it. Then adjust its size with the background-size property:</p>
+          <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
           <p><b>Example:</b></p>
-          <img class="img-fluid img2" src="images/example23.PNG" alt="#">
+          <p>p {</p>
+          <p>color: red;</p>
+          <p>text-align: center;</p>
+          <p>}</p>
+          <p><b>Example Explained</b></p>
+          <ul>
+            <li>p is a selector in CSS (it points to the HTML element you want to style: <p>).</li>
+            <li>color is a property, and red is the property value</li>
+            <li>text-align is a property, and center is the property value</li>
+          </ul>
 
       </div>
   </div>
